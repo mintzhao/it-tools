@@ -1,11 +1,11 @@
 home:
   categories:
-    newestTools: Newest tools
-    favoriteTools: 'Your favorite tools'
-    allTools: 'All the tools'
-  subtitle: 'Empowering Your Tool Needs with Ease!'
+    newestTools: 最新工具
+    favoriteTools: '您的收藏'
+    allTools: '全部工具'
+  subtitle: '轻松解决您的工具需求！'
   toggleMenu: 'Toggle menu'
-  home: Home
+  home: 首页
   uiLib: 'UI Lib'
   buyMeACoffee: 'Buy me a coffee'
   follow:
@@ -22,9 +22,9 @@ home:
     twitterAccount: 'IT Tools Twitter account'
     about: 'About  IT-Tools'
     aboutLabel: 'About'
-    darkMode: 'Dark mode'
-    lightMode: 'Light mode'
-    mode: 'Toggle dark/light mode'
+    darkMode: '深色模式'
+    lightMode: '浅色模式'
+    mode: '切换'
 about:
   h1: 'About IT-Tools'
   h1p1: 'This wonderful website, made with ❤ by'
@@ -42,24 +42,24 @@ about:
   h3p5: 'issues section'
   h3p6: 'in the GitHub repository.'
 404:
-  notFound: '404 Not Found'
-  sorry: 'Sorry, this page does not seem to exist'
-  maybe: 'Maybe the cache is doing tricky things, try force-refreshing?'
-  backHome: 'Back home'
+  notFound: '404 不存在'
+  sorry: '对不起，该页面并不存在'
+  maybe: '或许是缓存的问题，请刷新后再试'
+  backHome: '返回首页'
 toolCard:
-  new: New
+  new: 新
 search:
-  label: Search
+  label: 搜索
 tools:
   categories:
-    favorite-tools: 'Your favorite tools'
-    crypto: Crypto
-    converter: Converter
-    web: Web
-    images and videos: 'Images & Videos'
-    development: Development
-    network: Network
-    math: Math
-    measurement: Measurement
-    text: Text
-    data: Data
+    favorite-tools: '您的收藏'
+    crypto: 加解密
+    converter: 格式转换
+    web: 网页
+    images and videos: 图像&视频
+    development: 开发
+    network: 网络
+    math: 数学
+    measurement: 测量
+    text: 文本
+    data: 数据

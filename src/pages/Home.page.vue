@@ -8,7 +8,7 @@ import { config } from '@/config';
 
 const toolStore = useToolStore();
 
-useHead({ title: 'IT Tools - Handy online tools for developers' });
+useHead({ title: 'Toolify - Empowering Your Tool Needs with Ease!' });
 const { t } = useI18n();
 </script>
 
