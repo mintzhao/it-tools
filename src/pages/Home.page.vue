@@ -8,14 +8,14 @@ import { config } from '@/config';
 
 const toolStore = useToolStore();
 
-useHead({ title: 'Toolify - Empowering Your Tool Needs with Ease!' });
+useHead({ title: 'Toolify Lab - Empowering Your Tool Needs with Ease!' });
 const { t } = useI18n();
 </script>
 
 <template>
   <div class="home-page">
     <div class="grid-wrapper">
-      <n-grid v-if="config.showBanner" x-gap="12" y-gap="12" cols="1 400:2 800:3 1200:4 2000:8">
+      <!-- <n-grid v-if="config.showBanner" x-gap="12" y-gap="12" cols="1 400:2 800:3 1200:4 2000:8">
         <n-gi>
           <ColoredCard :title="$t('home.follow.title')" :icon="Heart">
             {{ $t('home.follow.p1') }}
@@ -36,7 +36,7 @@ const { t } = useI18n();
             <n-icon :component="Heart" />
           </ColoredCard>
         </n-gi>
-      </n-grid>
+      </n-grid> -->
 
       <transition name="height">
         <div v-if="toolStore.favoriteTools.length > 0">
