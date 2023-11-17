@@ -2,7 +2,7 @@
 import { useHead } from '@vueuse/head';
 import { useTracker } from '@/modules/tracker/tracker.services';
 
-useHead({ title: 'About - IT Tools' });
+useHead({ title: 'About - Toolify Lab' });
 const { tracker } = useTracker();
 </script>
 
