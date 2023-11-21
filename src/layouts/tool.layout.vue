@@ -8,26 +8,28 @@ import FavoriteButton from '@/components/FavoriteButton.vue';
 import type { Tool } from '@/tools/tools.types';
 
 const route = useRoute();
-
-const head = computed<HeadObject>(() => ({
-  title: `${route.meta.name} - Toolify Lab`,
-  meta: [
-    {
-      name: 'description',
-      content: route.meta?.description as string,
-    },
-    {
-      name: 'keywords',
-      content: ((route.meta.keywords ?? []) as string[]).join(','),
-    },
-  ],
-}));
-useHead(head);
 const { t } = useI18n();
 
 const i18nKey = computed<string>(() => route.path.trim().replace('/', ''));
 const toolTitle = computed<string>(() => t(`tools.${i18nKey.value}.title`, String(route.meta.name)));
 const toolDescription = computed<string>(() => t(`tools.${i18nKey.value}.description`, String(route.meta.description)));
+const toolKeywords = computed<string>(() => t(`tools.${i18nKey.value}.keywords`, ((route.meta.keywords ?? []) as string[]).join(',')));
+
+const head = computed<HeadObject>(() => ({
+  title: `${toolTitle.value} - Toolify Lab`,
+  meta: [
+    {
+      name: 'description',
+      content: `${toolDescription.value}`,
+    },
+    {
+      name: 'keywords',
+      // content: ((route.meta.keywords ?? []) as string[]).join(','),
+      content: `${toolKeywords.value}`,
+    },
+  ],
+}));
+useHead(head);
 </script>
 
 <template>

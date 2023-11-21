@@ -69,3 +69,17 @@ tools:
     measurement: '测量'
     text: '文本'
     data: '数据'
+  base64-file-converter:
+    title: Base64 文件转换器
+    description: 将字符串、文件或图像转换为其 base64 表示。
+    keywords: "base64,转换器,upload,上传,image,图像,file,文件,conversion,web,data,数据,format,格式"
+    invalid: '错误的Base64格式'
+    copied: 'Base64已复制到剪切板'
+    base642file: 'Base64到文件'
+    base642fileplaceholder: '在这里输入你的Base64文件字符串...'
+    file2base64: '文件到Base64'
+    fileuploadtitle: '将文件拖放到这里，或点击选择文件'
+    file2base64output: '转换结果将出现在这里'
+    downloadfile: '文件下载'
+global:
+  copy: 复制

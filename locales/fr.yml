@@ -63,3 +63,17 @@ tools:
     measurement: Mesure
     text: Texte
     data: Données
+  base64-file-converter:
+    title: Convertisseur de fichiers Base64
+    description: Convertir une chaîne de caractères, des fichiers ou des images en leur représentation base64.
+    keywords: "base64,converter,upload,image,file,conversion,web,data,format"
+    invalid: Invalid base 64 string
+    copied: Base64 string copied to the clipboard
+    base642file: Base64 to File
+    base642fileplaceholder: 'Insérez votre chaîne de fichier en Base64 ici...'
+    file2base64: 'File to Base64'
+    fileuploadtitle: 'Drag and drop a file here, or click to select a file'
+    file2base64output: 'File in base64 will be here'
+    downloadfile: 'Download File'
+global:
+  copy: Copy
