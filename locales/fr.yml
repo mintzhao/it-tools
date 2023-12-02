@@ -75,5 +75,13 @@ tools:
     fileuploadtitle: 'Drag and drop a file here, or click to select a file'
     file2base64output: 'File in base64 will be here'
     downloadfile: 'Download File'
+  yaml-to-toml:
+    title: YAML to TOML
+    description: Parse and convert YAML to TOML.
+    keywords: "yaml,YAML,to,toml,TOML,transform"
+    inputlabel: Your YAML
+    inputplaceholder: Paste your YAML here...
+    outputlabel: TOML from your YAML
+    invalidmessage: 'Provided YAML is not valid.'
 global:
   copy: Copy

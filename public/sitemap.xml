@@ -11,7 +11,13 @@
   <url>
        <loc>https://toolifylab.com/base64-file-converter</loc>
        <lastmod>2023-11-30T00:43:19+00:00</lastmod>
-       <changefreq>monthly</changefreq>
+       <changefreq>daily</changefreq>
        <priority>1.0000</priority>
   </url>
+    <url>
+        <loc>https://toolifylab.com/yaml-to-toml</loc>
+        <lastmod>2023-11-30T00:43:19+00:00</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>1.0000</priority>
+    </url>
 </urlset>

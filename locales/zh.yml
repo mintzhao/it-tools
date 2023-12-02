@@ -72,7 +72,7 @@ tools:
   base64-file-converter:
     title: Base64 文件转换器
     description: 将字符串、文件或图像转换为其 base64 表示。
-    keywords: "base64,转换器,upload,上传,image,图像,file,文件,conversion,web,data,数据,format,格式"
+    keywords: "base64,转换器,converter,upload,上传,image,图像,file,文件,conversion,web,data,数据,format,格式"
     invalid: '错误的Base64格式'
     copied: 'Base64已复制到剪切板'
     base642file: 'Base64到文件'
@@ -81,5 +81,13 @@ tools:
     fileuploadtitle: '将文件拖放到这里，或点击选择文件'
     file2base64output: '转换结果将出现在这里'
     downloadfile: '文件下载'
+  yaml-to-toml:
+    title: YAML转TOML
+    description: 将YAML转换成TOML
+    keywords: "yaml,YAML,to,toml,TOML,transform,转换器,converter,conversion,web,data,数据,format,格式"
+    inputlabel: "输入YAML:"
+    inputplaceholder: 在这里输入您的YAML
+    outputlabel: "输出TOML:"
+    invalidmessage: 'YAML格式错误.'
 global:
   copy: 复制
