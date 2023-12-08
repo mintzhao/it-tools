@@ -5,21 +5,22 @@ import { withDefaultOnError } from '../../utils/defaults';
 import { isValidToml } from '../toml-to-json/toml.services';
 import type { UseValidationRule } from '@/composable/validation';
 
+const { t } = useI18n();
 const transformer = (value: string) => value.trim() === '' ? '' : withDefaultOnError(() => stringifyToYaml(parseToml(value)), '');
 
 const rules: UseValidationRule<string>[] = [
   {
     validator: isValidToml,
-    message: 'Provided TOML is not valid.',
+    message: t('tools.toml-to-yaml.invalidmessage'),
   },
 ];
 </script>
 
 <template>
   <format-transformer
-    input-label="Your TOML"
-    input-placeholder="Paste your TOML here..."
-    output-label="YAML from your TOML"
+    :input-label="$t('tools.toml-to-yaml.inputlabel')"
+    :input-placeholder="$t('tools.toml-to-yaml.inputplaceholder')"
+    :output-label="$t('tools.toml-to-yaml.outputlabel')"
     output-language="yaml"
     :input-validation-rules="rules"
     :transformer="transformer"

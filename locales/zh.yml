@@ -89,5 +89,45 @@ tools:
     inputplaceholder: 在这里输入您的YAML
     outputlabel: "输出TOML:"
     invalidmessage: 'YAML格式错误.'
+  yaml-to-json-converter:
+    title: YAML转JSON
+    description: 将YAML转换成JSON.
+    keywords: "yaml,YAML,to,json,JSON,transform,转换器,converter,conversion,web,data,数据,format,格式"
+    invalidmessage: 'YAML格式错误.'
+    inputlabel: "输入YAML:"
+    inputplaceholder: 在这里输入您的YAML
+    outputlabel: "输出JSON:"
+  json-to-toml:
+    title: JSON转TOML
+    description: 将YAML转换成TOML.
+    keywords: "json,parse,toml,convert,transform,转化"
+    invalidmessage: 'JSON格式错误.'
+    inputlabel: "输入JSON:"
+    inputplaceholder: 在这里输入您的JSON
+    outputlabel: "输出TOML:"
+  json-to-yaml-converter:
+    title: JSON转YAML
+    description: 将JSON转换成YAML.
+    keywords: "json,parse,yaml,convert,transform,转化"
+    invalidmessage: 'JSON格式错误.'
+    inputlabel: "输入JSON:"
+    inputplaceholder: 在这里输入您的JSON
+    outputlabel: "输出YAML:"
+  toml-to-json:
+    title: TOML转JSON
+    description: 将TOML转换成JSON.
+    keywords: "toml,parse,json,convert,transform,转化"
+    invalidmessage: 'TOML格式错误.'
+    inputlabel: "输入TOML:"
+    inputplaceholder: 在这里输入您的TOML
+    outputlabel: "输出JSON:"
+  toml-to-yaml:
+    title: TOML转YAML
+    description: 将TOML转换成YAML.
+    keywords: "toml,parse,yaml,convert,transform,转化"
+    invalidmessage: 'TOML格式错误.'
+    inputlabel: "输入TOML:"
+    inputplaceholder: 在这里输入您的TOML
+    outputlabel: "输出YAML:"
 global:
   copy: 复制

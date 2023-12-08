@@ -88,7 +88,7 @@ tools:
   base64-file-converter:
     title: Base64 file converter
     description: Convert string, files or images into a it\'s base64 representation.
-    keywords: base64,converter,upload,image,file,conversion,web,data,format
+    keywords: "base64,转换器,converter,upload,上传,image,图像,file,文件,conversion,web,data,数据,format,格式"
     invalid: Invalid base 64 string
     copied: Base64 string copied to the clipboard
     base642file: Base64 to File
@@ -100,9 +100,51 @@ tools:
   yaml-to-toml:
     title: YAML to TOML
     description: Parse and convert YAML to TOML.
+    keywords: "yaml,YAML,to,toml,TOML,transform,转换器,converter,conversion,web,data,数据,format,格式"
     inputlabel: Your YAML
     inputplaceholder: Paste your YAML here...
     outputlabel: TOML from your YAML
     invalidmessage: 'Provided YAML is not valid.'
+  yaml-to-json-converter:
+    title: YAML to JSON
+    description: Simply convert YAML to JSON with this live online converter.
+    keywords: "yaml,YAML,to,json,JSON,transform,转换器,converter,conversion,web,data,数据,format,格式"
+    invalidmessage: 'Provided YAML is not valid.'
+    inputlabel: Your YAML
+    inputplaceholder: Paste your YAML here...
+    outputlabel: JSON from your YAML
+  json-to-toml:
+    title: JSON to TOML
+    description: Parse and convert JSON to TOML.
+    keywords: "json,parse,toml,convert,transform,转化"
+    invalidmessage: 'Provided JSON is not valid.'
+    inputlabel: Your JSON
+    inputplaceholder: Paste your JSON here...
+    outputlabel: TOML from your JSON
+  json-to-yaml-converter:
+    title: JSON to YAML
+    description: Parse and convert JSON to YAML.
+    keywords: "json,parse,yaml,convert,transform,转化"
+    invalidmessage: 'Provided JSON is not valid.'
+    inputlabel: Your JSON
+    inputplaceholder: Paste your JSON here...
+    outputlabel: YAML from your JSON
+  toml-to-json:
+    title: TOML to JSON
+    description: Parse and convert TOML to JSON.
+    keywords: "toml,parse,json,convert,transform,转化"
+    invalidmessage: 'Provided TOML is not valid.'
+    inputlabel: Your TOML
+    inputplaceholder: Paste your TOML here...
+    outputlabel: JSON from your TOML
+  toml-to-yaml:
+    title: TOML to YAML
+    description: Parse and convert TOML to YAML.
+    keywords: "toml,parse,yaml,convert,transform,转化"
+    invalidmessage: 'Provided TOML is not valid.'
+    inputlabel: Your TOML
+    inputplaceholder: Paste your TOML here...
+    outputlabel: YAML from your TOML
+
 global:
   copy: Copy
