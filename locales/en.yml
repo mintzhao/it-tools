@@ -145,6 +145,31 @@ tools:
     inputlabel: Your TOML
     inputplaceholder: Paste your TOML here...
     outputlabel: YAML from your TOML
-
+  phone-parser-and-formatter:
+    title: Phone parser and formatter
+    description: 'Parse, validate and format phone numbers. Get information about the phone number, like the country code, type, etc.'
+    keywords:  'phone,parser,formatter,validate,format,number,telephone,mobile,cell,international,national,手机号,格式化,国际化'
+    invalidmessage: 'Invalid phone number.'
+    country: Country
+    fullcountry: Country
+    countrycallingcode: 'Country calling code'
+    isvalid: 'Is valid?'
+    ispossible: 'Is possible?'
+    type: Type
+    internationalformat: 'International format'
+    nationalformat: 'National format'
+    e164format: 'E.164 format'
+    rfc3966format: 'RFC3966 format'
+    defaultcountrycode: 'Default country code:'
+    inputplaceholder: 'Enter a phone number'
+    inputlabel: "Phone number:"
+  emoji-picker:
+    title: Emoji picker
+    description: 'Copy and paste emojis easily and get the unicode and code points value of each emoji.'
+    keywords: 'emoji,picker,unicode,copy,paste,表情包,表情符号,复制,粘贴'
+    searchplaceholder: Search emojis (e.g. 'smile')...
 global:
   copy: Copy
+  unknown: Unknown
+  noresults: No results
+  searchresults: Search results

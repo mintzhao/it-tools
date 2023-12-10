@@ -129,5 +129,31 @@ tools:
     inputlabel: "输入TOML:"
     inputplaceholder: 在这里输入您的TOML
     outputlabel: "输出YAML:"
+  phone-parser-and-formatter:
+    title: 格式化电话号码
+    description: 解析、验证和格式化电话号码。获取有关电话号码的信息，如国家代码、类型等。
+    keywords:  'phone,parser,formatter,validate,format,number,telephone,mobile,cell,international,national,电话号码,手机号码,格式化,国际化'
+    invalidmessage: '无效的电话号码'
+    country: 国家编号
+    fullcountry: 国家
+    countrycallingcode: '国际电话区号'
+    isvalid: 是否有效？
+    ispossible: 是否可能？
+    type: 类型
+    internationalformat: 国际格式
+    nationalformat: 国内格式
+    e164format: 'E.164格式'
+    rfc3966format: 'RFC3966格式'
+    defaultcountrycode: '国家区号:'
+    inputplaceholder: '输入电话号码'
+    inputlabel: "电话号码:"
+  emoji-picker:
+    title: 表情符号选择器
+    description: '轻松复制和粘贴表情符号，并获取每个表情符号的Unicode和code points。'
+    keywords: 'emoji,picker,unicode,copy,paste,表情包,表情符号,复制,粘贴'
+    searchplaceholder: 搜索 (e.g. 'smile')...
 global:
   copy: 复制
+  unknown: 未知
+  noresults: 无结果
+  searchresults: 搜索结果

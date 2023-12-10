@@ -1,4 +1,5 @@
 <script lang="ts" setup>
+import {Home2} from "@vicons/tabler";
 import { useRoute } from 'vue-router';
 import { useHead } from '@vueuse/head';
 import type { HeadObject } from '@vueuse/head';
@@ -43,6 +44,11 @@ useHead(head);
 
           <div>
             <FavoriteButton :tool="{ name: route.meta.name } as Tool" />
+            <c-tooltip :tooltip="$t('home.home')">
+              <c-button to="/" circle variant="text" :aria-label="$t('home.home')">
+                <NIcon size="25" :component="Home2" />
+              </c-button>
+            </c-tooltip>
           </div>
         </div>
 
