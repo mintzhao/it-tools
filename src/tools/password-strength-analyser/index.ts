@@ -1,4 +1,5 @@
 import { defineTool } from '../tool';
+// import { tool as tokenGenerator } from '../token-generator';
 import PasswordIcon from '~icons/mdi/form-textbox-password';
 
 export const tool = defineTool({
@@ -9,4 +10,5 @@ export const tool = defineTool({
   component: () => import('./password-strength-analyser.vue'),
   icon: PasswordIcon,
   createdAt: new Date('2023-06-24'),
+  // relatedTools: [tokenGenerator],
 });

@@ -1,12 +1,18 @@
 import { ArrowsShuffle } from '@vicons/tabler';
 import { defineTool } from '../tool';
+import type { Tool } from '../tools.types';
 import { translate } from '@/plugins/i18n.plugin';
+// import { tool as passwordStrengthAnalyser } from '../password-strength-analyser';
 
 export const tool = defineTool({
   name: translate('tools.token-generator.title'),
   path: '/token-generator',
   description: translate('tools.token-generator.description'),
   keywords: ['token', 'random', 'string', 'alphanumeric', 'symbols', 'number', 'letters', 'lowercase', 'uppercase', 'password'],
+  // relatedTools: function () Tool[] {
+  //   const passwordStrengthAnalyser = import('../password-strength-analyser');
+  //   return [passwordStrengthAnalyser.tool];
+  // },
   component: () => import('./token-generator.tool.vue'),
   icon: ArrowsShuffle,
 });

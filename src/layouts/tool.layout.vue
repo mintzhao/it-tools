@@ -1,4 +1,6 @@
 <script lang="ts" setup>
+import ToolCard from "@/components/ToolCard.vue";
+import {useToolStore} from "@/tools/tools.store";
 import {Home2} from "@vicons/tabler";
 import { useRoute } from 'vue-router';
 import { useHead } from '@vueuse/head';
@@ -10,11 +12,13 @@ import type { Tool } from '@/tools/tools.types';
 
 const route = useRoute();
 const { t } = useI18n();
+const toolStore = useToolStore();
 
 const i18nKey = computed<string>(() => route.path.trim().replace('/', ''));
 const toolTitle = computed<string>(() => t(`tools.${i18nKey.value}.title`, String(route.meta.name)));
 const toolDescription = computed<string>(() => t(`tools.${i18nKey.value}.description`, String(route.meta.description)));
 const toolKeywords = computed<string>(() => t(`tools.${i18nKey.value}.keywords`, ((route.meta.keywords ?? []) as string[]).join(',')));
+// const relatedTools = route.meta.relatedTools as () => Tool[];
 
 const head = computed<HeadObject>(() => ({
   title: `${toolTitle.value} - Toolify Lab`,
@@ -63,6 +67,17 @@ useHead(head);
     <div class="tool-content">
       <slot />
     </div>
+
+<!--    <div v-if="(relatedTools ?? []).length > 0" style="margin-top: 40px">-->
+<!--      <n-h3>{{ $t('global.relatedtools') }}</n-h3>-->
+<!--      <n-grid x-gap="12" y-gap="12" cols="1 400:2 800:3 1200:4 2000:8">-->
+<!--        <n-gi v-for="tool in relatedTools" :key="tool.name">-->
+<!--          <transition>-->
+<!--            <ToolCard :tool="tool" />-->
+<!--          </transition>-->
+<!--        </n-gi>-->
+<!--      </n-grid>-->
+<!--    </div>-->
   </BaseLayout>
 </template>
 

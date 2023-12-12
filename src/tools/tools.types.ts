@@ -10,6 +10,7 @@ export interface Tool {
   redirectFrom?: string[]
   isNew: boolean
   createdAt?: Date
+  relatedTools: Tool[]
 }
 
 export interface ToolCategory {
