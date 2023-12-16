@@ -8,4 +8,5 @@ export const tool = defineTool({
   keywords: ['string', 'nato', 'alphabet', 'phonetic', 'oral', 'transmission'],
   component: () => import('./text-to-nato-alphabet.vue'),
   icon: Speakerphone,
+  relatedToolPaths: ["/text-to-binary"],
 });

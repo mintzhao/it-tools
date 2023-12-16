@@ -18,7 +18,7 @@ const i18nKey = computed<string>(() => route.path.trim().replace('/', ''));
 const toolTitle = computed<string>(() => t(`tools.${i18nKey.value}.title`, String(route.meta.name)));
 const toolDescription = computed<string>(() => t(`tools.${i18nKey.value}.description`, String(route.meta.description)));
 const toolKeywords = computed<string>(() => t(`tools.${i18nKey.value}.keywords`, ((route.meta.keywords ?? []) as string[]).join(',')));
-const relatedTools = toolStore.filterToolsByPaths(route.meta.relatedToolPaths ?? []);
+const relatedTools = computed<[]>(() => toolStore.filterToolsByPaths(route.meta.relatedToolPaths ?? []));
 
 const head = computed<HeadObject>(() => ({
   title: `${toolTitle.value} - Toolify Lab`,

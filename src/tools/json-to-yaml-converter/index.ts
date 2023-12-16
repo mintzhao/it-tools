@@ -9,4 +9,5 @@ export const tool = defineTool({
   component: () => import('./json-to-yaml.vue'),
   icon: Braces,
   createdAt: new Date('2023-04-10'),
+  relatedToolPaths: ["/yaml-to-json-converter", "/yaml-to-toml", "/toml-to-json", "/toml-to-yaml", "/json-to-toml"],
 });

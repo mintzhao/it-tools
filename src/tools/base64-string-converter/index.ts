@@ -9,4 +9,5 @@ export const tool = defineTool({
   component: () => import('./base64-string-converter.vue'),
   icon: FileDigit,
   redirectFrom: ['/file-to-base64', '/base64-converter'],
+  relatedToolPaths: ["/base64-file-converter"],
 });
