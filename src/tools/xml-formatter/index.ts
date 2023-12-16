@@ -9,4 +9,5 @@ export const tool = defineTool({
   component: () => import('./xml-formatter.vue'),
   icon: Code,
   createdAt: new Date('2023-06-17'),
+  relatedToolPaths: ["/sql-prettify", "/json-prettify"],
 });

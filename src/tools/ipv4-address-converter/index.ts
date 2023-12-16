@@ -9,4 +9,5 @@ export const tool = defineTool({
   component: () => import('./ipv4-address-converter.vue'),
   icon: Binary,
   createdAt: new Date('2023-04-08'),
+  relatedToolPaths: ["/ipv4-range-expander", "/ipv4-subnet-calculator", '/ipv6-ula-generator'],
 });

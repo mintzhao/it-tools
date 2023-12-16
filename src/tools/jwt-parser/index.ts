@@ -24,4 +24,5 @@ export const tool = defineTool({
   ],
   component: () => import('./jwt-parser.vue'),
   icon: Key,
+  relatedToolPaths: ["/basic-auth-generator"],
 });

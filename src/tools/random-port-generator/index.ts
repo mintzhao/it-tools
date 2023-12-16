@@ -8,4 +8,5 @@ export const tool = defineTool({
   keywords: ['system', 'port', 'lan', 'generator', 'random', 'development', 'computer'],
   component: () => import('./random-port-generator.vue'),
   icon: Server,
+  relatedToolPaths: ["/token-generator"],
 });

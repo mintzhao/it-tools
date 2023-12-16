@@ -23,4 +23,5 @@ export const tool = defineTool({
   ],
   component: () => import('./sql-prettify.vue'),
   icon: Database,
+  relatedToolPaths: ["/json-prettify", "/xml-formatter"],
 });

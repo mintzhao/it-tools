@@ -18,4 +18,5 @@ export const tool = defineTool({
   ],
   component: () => import('./basic-auth-generator.vue'),
   icon: PasswordRound,
+  relatedToolPaths: ["/jwt-parser"],
 });

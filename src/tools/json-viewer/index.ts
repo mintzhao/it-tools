@@ -9,4 +9,5 @@ export const tool = defineTool({
   component: () => import('./json-viewer.vue'),
   icon: Braces,
   redirectFrom: ['/json-viewer'],
+  relatedToolPaths: ["/json-minify", "/sql-prettify", "/xml-formatter"],
 });
