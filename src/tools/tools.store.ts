@@ -53,5 +53,12 @@ export const useToolStore = defineStore('tools', () => {
     isToolFavorite({ tool }: { tool: MaybeRef<Tool> }) {
       return favoriteToolsName.value.includes(get(tool).name);
     },
+
+    filterToolsByPaths(paths) {
+      if (paths.length < 0) {
+        return [];
+      }
+      return tools.value.filter(tool => paths.includes(tool.path));
+    },
   };
 });

@@ -10,5 +10,5 @@ export const tool = defineTool({
   component: () => import('./password-strength-analyser.vue'),
   icon: PasswordIcon,
   createdAt: new Date('2023-06-24'),
-  // relatedTools: [tokenGenerator],
+  relatedToolPaths: ["/token-generator"],
 });
